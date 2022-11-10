@@ -1,0 +1,120 @@
+body {
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+}
+
+.container{
+    width: 560px;
+    height: 420px;
+    display: flex;
+    margin: 15rem auto;
+}
+
+.perfume{
+    border-radius: 10px 0 0 10px;
+}
+
+.content{
+    float: right;
+    width: 280px;
+    text-align: left;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+.txt_style{
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+.cologne{
+    margin-right: 30px;
+}
+
+.text{
+    margin: 0;
+    line-height: 1.5;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 80px;
+}
+
+.amount{
+    color: hsl(158, 36%, 37%);
+    margin: 25px 0;
+    font-size: 2rem;
+}
+
+.rp{
+    text-decoration: line-through;
+    margin: auto;
+}
+
+.btn{
+    height: 40px;
+    width: 240px;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Montserrat';
+    background-color: hsl(158, 36%, 37%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: hsl(159, 55%, 22%);
+    cursor: pointer;
+}
+
+.btn_img, .btn_txt{
+    padding: 0 5px;
+}
+
+@media (max-width: 600px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin: 2rem auto;
+    }
+
+    .perfume{
+        border-radius: 10px 10px 0 0;
+        content: url(images/image-product-mobile.jpg);
+    }
+
+    .content{
+        float: right;
+        width: 290px;
+        text-align: left;
+        background-color: hsl(0, 0%, 100%);
+        padding: 15px 30px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .btn{
+        width: 290px;
+    }
+    
+    .btn:active{
+        background-color: hsl(159, 55%, 22%);
+    }
+
+    .attribution{
+        visibility: hidden;
+    }
+}
